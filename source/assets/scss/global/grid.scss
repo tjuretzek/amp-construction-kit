@@ -1,0 +1,17 @@
+.grid-container {
+  padding: 0 $space-grid;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: -#{$space-grid};
+  padding: 0;
+
+  & > * {
+    flex: 1 0 calc(#{$space-grid} * 10);
+    margin: $space-grid;
+  }
+}

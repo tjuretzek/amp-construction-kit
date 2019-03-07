@@ -1,0 +1,22 @@
+h1 {
+  font-weight: 100;
+  font-size: rem-calc(50);
+  margin: $space-default 0;
+  color: $color-main;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: rem-calc(20);
+  margin: $space-default 0;
+
+  strong {
+    font-weight: 300;
+    color: $color-main;
+  }
+}
+
+p {
+  font-size: $base-font-size;
+  margin: 0;
+}

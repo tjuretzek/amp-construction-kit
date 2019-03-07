@@ -1,0 +1,11 @@
+{
+  "fallback": {
+    "title": "AMP Construction Kit",
+    "description": "AMP Construction Kit",
+    "preview": "/assets/images/preview.jpg",
+    "url": "http://localhost:3000"
+  },
+  "favicon-color": "#000000",
+  "theme-color": "#000000",
+  "project-name": "AMP Construction Kit"
+}

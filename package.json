@@ -1,0 +1,48 @@
+{
+  "name": "amp-construction-kit",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp build",
+    "preinstall": "npm prune",
+    "presetup": "source ~/.nvm/nvm.sh && nvm use",
+    "setup": "sleep 1",
+    "postsetup": "npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:jursolutions/amp-construction-kit.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-inline-source": "^4.0.0",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-jpegoptim": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "run-sequence": "^2.2.1",
+    "panini": "^1.6.3"
+  },
+  "engines": {
+    "node": "11.10.x"
+  },
+  "license": "UNLICENSED"
+}
