@@ -1,0 +1,42 @@
+// Large up
+@media all and (min-width: $breakpoint-large) {
+  .hide-for-large {
+    display: none;
+  }
+
+  a {
+    &:before {
+      content: '';
+      width: 0;
+      position: absolute;
+      height: rem-calc(1);
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: rem-calc(-1);
+      transition: $default-transition;
+      background-color: $color-link;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &:before {
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+        background-color: $color-link-hover;
+      }
+    }
+  }
+
+  .row {
+    padding: 0;
+  }
+}
+
+// Large down
+@media all and (max-width: $breakpoint-large) {
+  .hide-for-medium {
+    display: none;
+  }
+}

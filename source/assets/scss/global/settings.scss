@@ -27,12 +27,14 @@ $header-height: calc(#{$logo-height} + (#{$space-default}*2));
 $main-height: calc(100vh - (#{$footer-height} + #{$header-height}));
 
 // Font Settings
-$default-font-size: rem-calc(14);
-$default-line-height: rem-calc(20);
+$font-family-default: "Roboto", sans-serif;
+$font-size-default: rem-calc(14);
+$font-line-height-default: rem-calc(20);
 
 // Color Settings
 $color-main: #0379c4;
-$color-black: #333333;
+$color-black: #333;
+$color-white: #FFF;
 
 $color-link: $color-main;
 $color-link-hover: $color-black;
@@ -40,3 +42,7 @@ $color-link-active: $color-black;
 
 // Transition Settings
 $default-transition: all .4s;
+
+// Breakpoints (min-width)
+$breakpoint-medium: rem-calc(720);
+$breakpoint-large: rem-calc(1024);

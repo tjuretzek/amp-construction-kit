@@ -6,7 +6,7 @@
         <a href="{{home.url}}" class="logo" title="{{home.title}}"></a>
       </div>
       <div class="grow">
-        <nav class="navigation">
+        <nav class="navigation hide-for-medium">
           <ul>
             {{#each navigation.items}}
             <li><a href="{{this.url}}"
@@ -17,6 +17,30 @@
             {{/each}}
           </ul>
         </nav>
+        <amp-sidebar id="sidebar"
+          class="sidebar"
+          layout="nodisplay"
+          side="right">
+          <div class="grid">
+            <div class="right">
+              <button class="close" on="tap:sidebar.close"></button>
+            </div>
+          </div>
+          <nav class="mobile-navigation">
+            <ul>
+              {{#each navigation.items}}
+              <li><a href="{{this.url}}"
+                     title="{{this.title}}"
+                     {{#ifpage this.page}}
+                     class="active"
+                     {{/ifpage}}>{{this.name}}</a></li>
+              {{/each}}
+            </ul>
+          </nav>
+        </amp-sidebar>
+        <div class="navigation hide-for-large">
+          <button class="menu" title="Open sidebar" on="tap:sidebar.open"></button>
+        </div>
       </div>
     </div>
   </div>

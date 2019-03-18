@@ -1,0 +1,6 @@
+// Small only
+@media all and (max-width: $breakpoint-medium) {
+  .hide-for-small {
+    display: none;
+  }
+}

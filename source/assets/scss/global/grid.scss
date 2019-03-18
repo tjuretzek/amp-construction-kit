@@ -2,12 +2,11 @@
   width: 100%;
   max-width: $content-width;
   margin: 0 auto;
-  padding: 0 $space-default;
-  box-sizing: border-box;
+  padding: 0 $space-small;
 }
 
 .grid {
-  width: 100%;
+  width: calc(100% + (#{$space-grid*2});
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -25,6 +24,7 @@
   }
 
   & > .right {
+    display: flex;
     justify-content: flex-end;
   }
 

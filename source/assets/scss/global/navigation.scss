@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      margin: 0 $space-small;
+    }
+  }
+}
+
+.sidebar {
+  background-color: $color-white;
+  padding: $space-xlarge $space-default;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.mobile-navigation {
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: block;
+      margin: $space-small 0;
+      width: 100%;
+      > a {
+        padding: $space-small 0;
+        display: block;
+      }
+    }
+  }
+}

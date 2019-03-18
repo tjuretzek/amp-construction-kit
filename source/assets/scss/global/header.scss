@@ -1,7 +1,6 @@
 header {
   padding: $space-default 0;
   height: $header-height;
-  box-sizing: border-box;
 }
 
 .logo {
@@ -16,23 +15,5 @@ header {
 
   &:before {
     content: none;
-  }
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-
-  > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    > li {
-      display: inline-block;
-      margin: 0 $space-small;
-    }
   }
 }

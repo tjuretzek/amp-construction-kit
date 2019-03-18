@@ -1,0 +1,29 @@
+button {
+  appearance: none;
+  border: none;
+  font-size: $font-size-default;
+  background: transparent no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: $color-black;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    cursor: pointer;
+  }
+
+  &.menu {
+    width: $space-large;
+    height: $space-large;
+    @extend .icon-menu;
+  }
+
+  &.close {
+    width: $space-default;
+    height: $space-default;
+    @extend .icon-close;
+  }
+}
