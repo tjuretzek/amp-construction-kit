@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "Home",
+      "url": "/",
+      "title": "AMP Contruction Kit Home",
+      "page": "index"
+    },
+    {
+      "name": "How to",
+      "url": "/how-to.html",
+      "title": "How to use the Construction Kit",
+      "page": "how-to"
+    }
+  ]
+}

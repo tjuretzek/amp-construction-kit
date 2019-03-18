@@ -1,13 +1,42 @@
 @import "mixins";
 
+// REM Base do not change this value
 $rem-base: 16;
 
-$space-grid: rem-calc(10);
+// Space Variables
+$space-xlarge: rem-calc(40);
+$space-large: rem-calc(30);
 $space-default: rem-calc(20);
+$space-small: rem-calc(10);
+$space-tiny: rem-calc(5);
 
-$footer-height: rem-calc(40);
+$space-grid: $space-small;
 
-$base-font-size: rem-calc(14);
 
+// Logo Settings
+$logo-width: rem-calc(170);
+$logo-height: rem-calc(60);
+
+$logo-footer-width: calc(#{$logo-width}/2);
+$logo-footer-height: calc(#{$logo-height}/2);
+
+// Content Width and Master Element Heights
+$content-width: rem-calc(1024);
+$footer-height: rem-calc(60);
+$header-height: calc(#{$logo-height} + (#{$space-default}*2));
+$main-height: calc(100vh - (#{$footer-height} + #{$header-height}));
+
+// Font Settings
+$default-font-size: rem-calc(14);
+$default-line-height: rem-calc(20);
+
+// Color Settings
 $color-main: #0379c4;
 $color-black: #333333;
+
+$color-link: $color-main;
+$color-link-hover: $color-black;
+$color-link-active: $color-black;
+
+// Transition Settings
+$default-transition: all .4s;

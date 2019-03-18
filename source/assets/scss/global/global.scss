@@ -6,3 +6,39 @@ body {
   cursor: default;
   color: $color-black;
 }
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: $default-transition;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 0;
+    position: absolute;
+    height: rem-calc(1);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem-calc(-1);
+    transition: $default-transition;
+    background-color: $color-link;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-link-hover;
+
+    &:before {
+      width: 100%;
+      left: 0;
+      transform: translateX(0);
+      background-color: $color-link-hover;
+    }
+  }
+
+  &.active {
+    color: $color-link-active;
+  }
+}

@@ -4,4 +4,11 @@ footer {
   align-items: center;
   background-color: #EFEFEF;
   text-align: center;
+  overflow: hidden;
+
+  .logo {
+    width: $logo-footer-width;
+    height: $logo-footer-height;
+    filter: brightness(0);
+  }
 }

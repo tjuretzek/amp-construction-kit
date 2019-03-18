@@ -1,0 +1,38 @@
+header {
+  padding: $space-default 0;
+  height: $header-height;
+  box-sizing: border-box;
+}
+
+.logo {
+  background: url(/assets/images/logo.svg) no-repeat center left/100%;
+  color: $color-main;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: $logo-width;
+  height: $logo-height;
+  display: block;
+
+  &:before {
+    content: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      margin: 0 $space-small;
+    }
+  }
+}

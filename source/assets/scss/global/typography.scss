@@ -17,6 +17,7 @@ h2 {
 }
 
 p {
-  font-size: $base-font-size;
-  margin: 0;
+  font-size: $default-font-size;
+  margin: $space-default 0;
+  line-height: $default-line-height;
 }

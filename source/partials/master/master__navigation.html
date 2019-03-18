@@ -1,0 +1,24 @@
+<!--=== Header ===-->
+<header>
+  <div class="row">
+    <div class="grid">
+      <div class="shrink">
+        <a href="{{home.url}}" class="logo" title="{{home.title}}"></a>
+      </div>
+      <div class="grow">
+        <nav class="navigation">
+          <ul>
+            {{#each navigation.items}}
+            <li><a href="{{this.url}}"
+                   title="{{this.title}}"
+                   {{#ifpage this.page}}
+                   class="active"
+                   {{/ifpage}}>{{this.name}}</a></li>
+            {{/each}}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--=== End Header ===-->

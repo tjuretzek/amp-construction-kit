@@ -1,5 +1,9 @@
-.grid-container {
-  padding: 0 $space-grid;
+.row {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 $space-default;
+  box-sizing: border-box;
 }
 
 .grid {
@@ -13,5 +17,19 @@
   & > * {
     flex: 1 0 calc(#{$space-grid} * 10);
     margin: $space-grid;
+  }
+
+  & > .shrink {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  & > .right {
+    justify-content: flex-end;
+  }
+
+  & > .middle {
+    display: flex;
+    align-items: center;
   }
 }
